@@ -2,8 +2,9 @@
 .first_screen {
   display: grid;
   width: 1920px;
-  grid-template-columns: repeat(12, 65px);
-
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  justify-self: center;
   height: 840px;
 
   background: linear-gradient(
@@ -16,12 +17,10 @@
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .logo {
-  width: 134px;
-  height: 37px;
-  flex: none;
-  order: 1;
+  justify-self: center;
+}
+.logo1 {
   flex-grow: 2/7;
   font-family: "Post No Bills Jaffna SemiBold";
   font-style: normal;
@@ -33,4 +32,84 @@
 
   border: 1px solid #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.logo2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  /* identical to box height */
+  letter-spacing: 0.12em;
+
+  color: #ffffff;
+}
+.first-screen__menu {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  justify-self: end;
+  width: 400px;
+  height: 100px;
+  justify-self: end;
+  align-self: center;
+  align-content: stretch;
+  gap: 40px;
+}
+
+.first-screen__center {
+  width: 556px;
+  height: 109px;
+  grid-area: 3/2;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  justify-self: center;
+  /* accent */
+  color: #d4c17f;
+}
+.mouse {
+  width: 40px;
+  height: 40px;
+  background: url(/assets/mouse.svg);
+  grid-area: 4/2;
+  justify-self: center;
+}
+
+.phone-call {
+  width: 139px;
+  height: 21px;
+  grid-area: 5/2;
+  justify-self: end;
+  margin-right: 20px;
+}
+.placeholder {
+  width: 218px;
+  height: 21px;
+  grid-area: 5/2;
+  justify-self: start;
+  margin-left: 20px;
+}
+.phone-cimg {
+  image-orientation: url(/assets/phone-call.svg);
+  justify-self: baseline;
+}
+.text {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #ffffff;
 }

@@ -7,21 +7,14 @@
   justify-self: center;
   height: 840px;
 
-  background: linear-gradient(
-      180deg,
-      #242b33 11.98%,
-      rgba(45, 52, 60, 0.38) 51.04%,
-      #242b33 92.19%
-    ),
-    url(/assets/header1.svg);
-  border: 1px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: url(/assets/header1.svg);
 }
 .logo {
   justify-self: center;
   align-self: flex-start;
   width: 134px;
   height: 50px;
+  margin-top: 30px;
 }
 .logo1 {
   font-family: "Post No Bills Jaffna SemiBold";
@@ -54,13 +47,8 @@
   letter-spacing: 0.05em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #ffffff;
+  margin-top: 55px;
   justify-self: end;
-  width: 400px;
-  height: 100px;
-  justify-self: end;
-  align-self: center;
-  align-content: stretch;
-  gap: 40px;
 }
 
 .first-screen__center {
@@ -90,32 +78,30 @@
   height: 21px;
   grid-area: 5/2;
   justify-self: end;
-  margin-right: 250px;
+  margin-right: 240px;
 }
 .placeholder {
   width: 218px;
   height: 21px;
   grid-area: 5/2;
-  justify-self: start;
-  margin-left: 250px;
+  justify-self: flex-start;
+  margin-left: 240px;
 }
 .vector1 {
   grid-area: 5/2;
-  justify-self: start;
-  left: 14.98%;
-  right: 14.98%;
-  top: 0%;
-  bottom: 0%;
-  image-orientation: url(/assets/v.svg);
-  background: #ffffff;
+  width: 15px;
+  height: 21px;
+  margin-left: 220px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: url(/assets/group1.svg);
 }
 .phone-cimg {
-  image-orientation: url(/assets/phone-call.svg);
-  justify-self: baseline;
+  grid-area: 5/2;
+  background: url(/assets/phone-call.svg);
+
   width: 21px;
   height: 21px;
-  left: 1010px;
-  top: 745px;
+  margin-left: 550px;
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -128,4 +114,30 @@
   text-align: center;
 
   color: #ffffff;
+}
+
+.testimonials {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-self: center;
+  width: 794px;
+  height: 180px;
+  margin-left: 563px;
+  justify-items: center;
+  background: linear-gradient(
+      180deg,
+      #242b33 11.98%,
+      rgba(45, 52, 60, 0.38) 51.04%,
+      #242b33 92.19%
+    ),
+    url(/assets/header1.svg);
+}
+
+.bench {
+  grid-area: 1 / 1;
+  background: url(/assets/bench.svg);
+  width: 80px;
+  height: 80px;
 }

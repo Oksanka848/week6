@@ -140,4 +140,85 @@
   background: url(/assets/bench.svg);
   width: 80px;
   height: 80px;
+  margin-top: 10px;
+}
+
+.buil {
+  grid-area: 1 / 2;
+  background: url(/assets/building.svg);
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+}
+
+.fontan {
+  grid-area: 1 / 3;
+  background: url(/assets/fountain.svg);
+  width: 80px;
+  height: 80px;
+  margin-top: 15px;
+}
+
+.bycic {
+  grid-area: 1 / 4;
+  background: url(/assets/bicycle.svg);
+  width: 88px;
+  height: 80px;
+  margin-top: 10px;
+}
+.item1 , 
+.item2 , 
+.item3 ,
+.item4 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  
+  text-align: center;
+    color: #FFFFFF;
+  
+}
+
+.appartments {
+  width: 1100px;
+height: 806px;
+margin-left: 405px;
+top: 1260px;
+display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 36px 100px 1fr 1fr;
+  justify-self: center;
+  
+ 
+  column-gap: 30px;
+  background: linear-gradient(
+      180deg,
+      #242b33 11.98%,
+      rgba(45, 52, 60, 0.38) 51.04%,
+      #242b33 92.19%
+    );
+}
+
+.apptext {
+  grid-area: 1 / 1;
+  font-family: 'Playfair Display', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 48px;
+
+
+color: #D4C17F;
+}
+.app1 {
+  grid-area: 3/1;
+  width: 535px;
+height: 320px;
+left: 405px;
+top: 1396px;
+justify-self: start;
+  background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%), url(/assets/apart1.svg), #D4C17F;
 }

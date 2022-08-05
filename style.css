@@ -105,7 +105,8 @@
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.text {
+.phone-call.text ,
+.placeholder.text {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -166,10 +167,10 @@
   height: 80px;
   margin-top: 10px;
 }
-.item1 , 
-.item2 , 
-.item3 ,
-.item4 {
+.tex1 , 
+.tex2 , 
+.tex3 ,
+.tex4 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -184,8 +185,9 @@
 .appartments {
   width: 1100px;
 height: 806px;
+
 margin-left: 405px;
-top: 1260px;
+
 display: grid;
 
   grid-template-columns: 1fr 1fr;
@@ -229,7 +231,7 @@ justify-self: start;
   font-size: 24px;
   line-height: 28px;
     color: #FFFFFF;
-    margin-top: 100%;
+    margin-top: 50%;
     align-self: end;
    
     }
@@ -264,19 +266,15 @@ justify-self: start;
     }
 
     .cta {
+      display: grid;
       width: 1920px;
-height: 560px;
+height: 1560px;
 top: 2066px;
-display: grid;
-
+gap: 35px;
   grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 35px 1fr;
   
-  background: linear-gradient(180deg, #242B33 10.42%,
-   rgba(36, 43, 51, 0) 50.52%,
-    #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9),
-     rgba(36, 43, 51, 0.9)), url(/assets/header1.svg), #C4C4C4;
-  
+  background: url(/assets/header1.svg);
 }
 
 .cta1 {
@@ -288,5 +286,38 @@ font-size: 36px;
 line-height: 48px;
 
 color: #D4C17F;
+
+}
+.cta2 {
+  grid-area: 2/2;
+  width: 535px;
+height: 114px;
+left: 405px;
+top: 2332px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+color: #FFFFFF;
+
+.cta3 {
+  grid-area: 2/1;
+  width: 255px;
+height: 50px;
+left: 975px;
+top: 2311px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 27px;
+/* identical to box height, or 193% */
+color: #BEBEBE;
+
+background: #FFFFFF;
+opacity: 0.2;
 
 }

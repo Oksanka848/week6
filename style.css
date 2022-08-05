@@ -105,7 +105,7 @@
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.phone-call.text ,
+.phone-call.text,
 .placeholder.text {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -167,157 +167,224 @@
   height: 80px;
   margin-top: 10px;
 }
-.tex1 , 
-.tex2 , 
-.tex3 ,
+.tex1,
+.tex2,
+.tex3,
 .tex4 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 27px;
-  
+
   text-align: center;
-    color: #FFFFFF;
-  
+  color: #ffffff;
 }
 
 .appartments {
   width: 1100px;
-height: 806px;
+  height: 806px;
 
-margin-left: 405px;
+  margin-left: 405px;
 
-display: grid;
+  display: grid;
 
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 36px 100px 1fr 1fr;
   justify-self: center;
-  
- 
+
   column-gap: 30px;
   background: linear-gradient(
-      180deg,
-      #242b33 11.98%,
-      rgba(45, 52, 60, 0.38) 51.04%,
-      #242b33 92.19%
-    );
+    180deg,
+    #242b33 11.98%,
+    rgba(45, 52, 60, 0.38) 51.04%,
+    #242b33 92.19%
+  );
 }
 
 .apptext {
   grid-area: 1 / 1;
-  font-family: 'Playfair Display', sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 48px;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
 
-color: #D4C17F;
+  color: #d4c17f;
 }
 .app1 {
   grid-area: 3/1;
   width: 535px;
-height: 320px;
-left: 405px;
-top: 1396px;
-justify-self: start;
-  background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%), url(/assets/apart1.svg), #D4C17F;
+  height: 320px;
+  left: 405px;
+  top: 1396px;
+  justify-self: start;
+  background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242b33 100%),
+    url(/assets/apart1.svg), #d4c17f;
 }
-.apptex1 , 
+.apptex1,
 .apptex12 {
-  Font-family: 'Raleway';
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-    color: #FFFFFF;
-    margin-top: 50%;
-    align-self: end;
-   
-    }
-    .app2 {
-      grid-area: 3/2;
-      width: 535px;
-      height: 320px;
-      left: 970px;
-      top: 1396px;
-      
-    justify-self: start;
-      background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%), url(/assets/apart2.svg), #D4C17F;
-    }  
-    .app3 {
-      grid-area: 4/1;
-      width: 535px;
-      height: 320px;
-      left: 405px;
-      top: 1746px;
-      
-    justify-self: start;
-      background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%), url(/assets/apart3.svg), #D4C17F;
-    }    
-    .app4 {
-      grid-area: 4/2;
-      width: 535px;
-    height: 320px;
-    left: 405px;
-    top: 1396px;
-    justify-self: start;
-      background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%), url(/assets/apart4.svg), #D4C17F;
-    }
+  color: #ffffff;
+  margin-top: 50%;
+  align-self: end;
+}
+.app2 {
+  grid-area: 3/2;
+  width: 535px;
+  height: 320px;
+  left: 970px;
+  top: 1396px;
 
-    .cta {
-      display: grid;
-      width: 1920px;
-height: 1560px;
-top: 2066px;
-gap: 35px;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 35px 1fr;
-  
-  background: url(/assets/header1.svg);
+  justify-self: start;
+  background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242b33 100%),
+    url(/assets/apart2.svg), #d4c17f;
+}
+.app3 {
+  grid-area: 4/1;
+  width: 535px;
+  height: 320px;
+  left: 405px;
+  top: 1746px;
+
+  justify-self: start;
+  background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242b33 100%),
+    url(/assets/apart3.svg), #d4c17f;
+}
+.app4 {
+  grid-area: 4/2;
+  width: 535px;
+  height: 320px;
+  left: 405px;
+  top: 1396px;
+  justify-self: start;
+  background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242b33 100%),
+    url(/assets/apart4.svg), #d4c17f;
 }
 
+.bacgr {
+  position: static;
+  width: 1920px;
+  height: 560px;
+  left: 0px;
+  top: 2066px;
+  background: url(/assets/ctaback.svg);
+}
+.cta {
+  display: grid;
+  width: 1920px;
+  height: 1560px;
+  top: 2066px;
+  gap: 35px;
+  grid-template-columns: 370px 535px 255px 1fr;
+  grid-template-rows: 180px 114px 50px 180px;
+}
+.sectionwrap3 {
+  position: static;
+  width: 1920px;
+  height: 1560px;
+  left: 0px;
+  top: 2066px;
+  background: url(/assets/ctaback.svg);
+}
 .cta1 {
-  grid-area: 2/1;
-  font-family: 'Playfair Display';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 48px;
+  grid-area: 1/2;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
 
-color: #D4C17F;
-
+  color: #d4c17f;
+  margin-top: 110px;
 }
 .cta2 {
   grid-area: 2/2;
   width: 535px;
-height: 114px;
-left: 405px;
-top: 2332px;
+  height: 266px;
+  left: 405px;
+  top: 2332px;
 
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* or 150% */
-color: #FFFFFF;
-
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  color: #ffffff;
+}
 .cta3 {
-  grid-area: 2/1;
+  grid-area: 2/3;
   width: 255px;
-height: 50px;
-left: 975px;
-top: 2311px;
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 27px;
-/* identical to box height, or 193% */
-color: #BEBEBE;
+  height: 50px;
+  left: 975px;
+  text-align: center;
+  align-self: start;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
 
-background: #FFFFFF;
-opacity: 0.2;
+  color: #bebebe;
 
+  background: #ffffff;
+  opacity: 0.2;
+}
+.cta4 {
+  grid-area: 2/3;
+  width: 255px;
+  height: 50px;
+  left: 975px;
+
+  align-self: flex-end;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+
+  text-align: center;
+
+  color: rgba(255, 255, 255, 1);
+}
+
+.cta5 {
+  grid-area: 2/4;
+  width: 255px;
+  height: 50px;
+  left: 975px;
+  text-align: center;
+  align-self: start;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  /* identical to box height, or 193% */
+  color: #bebebe;
+
+  background: #ffffff;
+  opacity: 0.2;
+}
+
+.cta6 {
+  grid-area: 2/4;
+  width: 255px;
+  height: 50px;
+  left: 975px;
+  text-align: center;
+  align-self: flex-end;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  background: #d4c17f;
+  padding-top: 5px;
+  color: #ffffff;
 }

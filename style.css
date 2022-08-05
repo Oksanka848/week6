@@ -222,13 +222,16 @@ justify-self: start;
   background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%), url(/assets/apart1.svg), #D4C17F;
 }
 .apptex1 , 
-.apptex2 {
-  Font-family: 'Raleway' sans-serif;
+.apptex12 {
+  Font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
     color: #FFFFFF;
+    margin-top: 100%;
+    align-self: end;
+   
     }
     .app2 {
       grid-area: 3/2;
@@ -250,3 +253,18 @@ justify-self: start;
     justify-self: start;
       background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%), url(/assets/apart3.svg), #D4C17F;
     }    
+    .app4 {
+      grid-area: 4/2;
+      width: 535px;
+    height: 320px;
+    left: 405px;
+    top: 1396px;
+    justify-self: start;
+      background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%), url(/assets/apart1.svg), #D4C17F;
+    }
+
+    .cta {
+      width: 1920px;
+height: 560px;
+
+    }

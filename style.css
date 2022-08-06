@@ -265,10 +265,19 @@
   height: 560px;
   gap: 35px;
   grid-template-columns: 405px 535px 255px 1fr;
-  grid-template-rows: 180px 114px 50px 180px;
+  grid-template-rows: 180px 135px 50px 180px;
   background-image: url(/assets/ctaback.svg);
 }
 
+.ctatex1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #bebebe;
+  margin-top: 8px;
+}
 .cta1 {
   grid-area: 1/2;
   font-family: "Playfair Display";
@@ -298,17 +307,10 @@
   height: 50px;
   text-align: center;
   align-self: start;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 27px;
-
-  color: #bebebe;
-
   background: #ffffff;
-  opacity: 0.3;
+  opacity: 0.2;
 }
+
 .cta4 {
   grid-area: 2/3;
   width: 255px;
@@ -355,8 +357,8 @@
   font-size: 14px;
   line-height: 27px;
   background: #d4c17f;
-  padding-top: 5px;
   color: #ffffff;
+  margin-top: 8px;
 }
 
 .foot {

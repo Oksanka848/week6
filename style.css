@@ -4,9 +4,7 @@
   width: 1920px;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  justify-self: center;
   height: 840px;
-
   background: url(/assets/header1.svg);
 }
 .logo {
@@ -119,13 +117,12 @@
 
 .testimonials {
   display: grid;
+  width: 1920px;
+  grid-template-columns: 563px 1fr 1fr 1fr 1fr 563px;
+  grid-template-rows: 1fr 1fr 1fr;
 
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-self: center;
-  width: 794px;
-  height: 180px;
-  margin-left: 563px;
+  height: 360px;
+
   justify-items: center;
   background: linear-gradient(
       180deg,
@@ -137,7 +134,7 @@
 }
 
 .bench {
-  grid-area: 1 / 1;
+  grid-area: 1 / 2;
   background: url(/assets/bench.svg);
   width: 80px;
   height: 80px;
@@ -145,7 +142,7 @@
 }
 
 .buil {
-  grid-area: 1 / 2;
+  grid-area: 1 / 3;
   background: url(/assets/building.svg);
   width: 80px;
   height: 80px;
@@ -153,7 +150,7 @@
 }
 
 .fontan {
-  grid-area: 1 / 3;
+  grid-area: 1 / 4;
   background: url(/assets/fountain.svg);
   width: 80px;
   height: 80px;
@@ -161,7 +158,7 @@
 }
 
 .bycic {
-  grid-area: 1 / 4;
+  grid-area: 1 / 5;
   background: url(/assets/bicycle.svg);
   width: 88px;
   height: 80px;
@@ -176,23 +173,28 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 27px;
-
+  margin-top: 10px;
   text-align: center;
   color: #ffffff;
 }
-
+.tex1 {
+  grid-area: 2 / 2;
+}
+.tex2 {
+  grid-area: 2 / 3;
+}
+.tex3 {
+  grid-area: 2 / 4;
+}
+.tex4 {
+  grid-area: 2 / 5;
+}
 .appartments {
-  width: 1100px;
+  width: 1920px;
   height: 806px;
-
-  margin-left: 405px;
-
   display: grid;
-
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 36px 100px 1fr 1fr;
-  justify-self: center;
-
+  grid-template-columns: 405px 1fr 1fr 405px;
+  grid-template-rows: 40px 100px 1fr 1fr;
   column-gap: 30px;
   background: linear-gradient(
     180deg,
@@ -203,7 +205,7 @@
 }
 
 .apptext {
-  grid-area: 1 / 1;
+  grid-area: 1 / 2;
   font-family: "Playfair Display", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -213,11 +215,9 @@
   color: #d4c17f;
 }
 .app1 {
-  grid-area: 3/1;
+  grid-area: 3/2;
   width: 535px;
   height: 320px;
-  left: 405px;
-  top: 1396px;
   justify-self: start;
   background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242b33 100%),
     url(/assets/apart1.svg), #d4c17f;
@@ -231,66 +231,44 @@
   line-height: 28px;
   color: #ffffff;
   margin-top: 50%;
-  align-self: end;
+  margin-left: 50px;
 }
 .app2 {
-  grid-area: 3/2;
+  grid-area: 3/3;
   width: 535px;
   height: 320px;
-  left: 970px;
-  top: 1396px;
-
   justify-self: start;
   background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242b33 100%),
     url(/assets/apart2.svg), #d4c17f;
 }
 .app3 {
-  grid-area: 4/1;
+  grid-area: 4/2;
   width: 535px;
   height: 320px;
-  left: 405px;
-  top: 1746px;
-
   justify-self: start;
   background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242b33 100%),
     url(/assets/apart3.svg), #d4c17f;
 }
+
 .app4 {
-  grid-area: 4/2;
+  grid-area: 4/3;
   width: 535px;
   height: 320px;
-  left: 405px;
-  top: 1396px;
   justify-self: start;
   background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242b33 100%),
     url(/assets/apart4.svg), #d4c17f;
 }
 
-.bacgr {
-  position: static;
-  width: 1920px;
-  height: 560px;
-  left: 0px;
-  top: 2066px;
-  background: url(/assets/ctaback.svg);
-}
 .cta {
   display: grid;
   width: 1920px;
-  height: 1560px;
-  top: 2066px;
+  height: 560px;
   gap: 35px;
-  grid-template-columns: 370px 535px 255px 1fr;
+  grid-template-columns: 405px 535px 255px 1fr;
   grid-template-rows: 180px 114px 50px 180px;
+  background-image: url(/assets/ctaback.svg);
 }
-.sectionwrap3 {
-  position: static;
-  width: 1920px;
-  height: 1560px;
-  left: 0px;
-  top: 2066px;
-  background: url(/assets/ctaback.svg);
-}
+
 .cta1 {
   grid-area: 1/2;
   font-family: "Playfair Display";
@@ -306,9 +284,6 @@
   grid-area: 2/2;
   width: 535px;
   height: 266px;
-  left: 405px;
-  top: 2332px;
-
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
@@ -321,7 +296,6 @@
   grid-area: 2/3;
   width: 255px;
   height: 50px;
-  left: 975px;
   text-align: center;
   align-self: start;
   font-family: "Raleway";
@@ -333,14 +307,12 @@
   color: #bebebe;
 
   background: #ffffff;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 .cta4 {
   grid-area: 2/3;
   width: 255px;
   height: 50px;
-  left: 975px;
-
   align-self: flex-end;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -357,7 +329,6 @@
   grid-area: 2/4;
   width: 255px;
   height: 50px;
-  left: 975px;
   text-align: center;
   align-self: start;
   font-family: "Raleway";
@@ -376,7 +347,6 @@
   grid-area: 2/4;
   width: 255px;
   height: 50px;
-  left: 975px;
   text-align: center;
   align-self: flex-end;
   font-family: "Raleway";
@@ -387,4 +357,82 @@
   background: #d4c17f;
   padding-top: 5px;
   color: #ffffff;
+}
+
+.foot {
+  display: grid;
+  width: 1920px;
+  height: 272px;
+  grid-template-columns: 405px 134px 166px 119px 167px 119px 166px 239px 405px;
+  grid-template-rows: 78px 149px 51px;
+  background: #2d343c;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.first-screen__logo {
+  grid-area: 2/2;
+  width: 134px;
+  height: 66px;
+  background: url(/assets/first-screen__logo.svg);
+}
+.ftex1,
+.ftex2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 10px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.footer__col1 {
+  grid-area: 2/4;
+}
+
+.footer__col2 {
+  grid-area: 2/6;
+}
+.footer__col3 {
+  grid-area: 2/8;
+}
+.ftex3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 10px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.vect {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 60px;
+  margin-top: 20px;
+}
+.vect1 {
+  width: 28.26px;
+  height: 20px;
+
+  background: url(/assets/vector_vk.svg);
+}
+
+.vect2 {
+  width: 35.05px;
+  height: 20px;
+
+  background: url(/assets/vector_tube.svg);
+}
+.vect3 {
+  width: 20px;
+  height: 20px;
+
+  background: url(/assets/facebook-logo.svg);
+}
+.vect4 {
+  width: 20px;
+  height: 20px;
+
+  background: url(/assets/instagram.svg);
 }
